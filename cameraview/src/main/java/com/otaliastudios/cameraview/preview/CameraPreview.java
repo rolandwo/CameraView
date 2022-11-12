@@ -168,9 +168,8 @@ public abstract class CameraPreview<T extends View, Output> {
      * Returns the current input stream size, in view coordinates.
      * @return the current input stream size
      */
-    @VisibleForTesting
     @NonNull
-    final Size getStreamSize() {
+    public final Size getStreamSize() {
         return new Size(mInputStreamWidth, mInputStreamHeight);
     }
 
