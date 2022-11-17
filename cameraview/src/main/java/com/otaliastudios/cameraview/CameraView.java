@@ -1011,7 +1011,7 @@ public class CameraView extends FrameLayout implements LifecycleObserver {
     }
 
     @NonNull
-    public Size getPreviewSize() { return mCameraPreview.getStreamSize();}
+    public Size getSurfaceSize() { return mCameraPreview.getSurfaceSize();}
 
     /**
      * Controls the core engine. Should only be called
