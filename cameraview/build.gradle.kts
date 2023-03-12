@@ -10,7 +10,7 @@ plugins {
 }
 
 android {
-    compileSdk = property("compileSdkVersion") as Int
+    compileSdk = 33 as Int
     defaultConfig {
         minSdk = property("minSdkVersion") as Int
         targetSdk = property("targetSdkVersion") as Int
@@ -24,19 +24,19 @@ android {
 }
 
 dependencies {
-    testImplementation("junit:junit:4.13.1")
-    testImplementation("org.mockito:mockito-inline:2.28.2")
+    testImplementation("junit:junit:4.13.2")
+    testImplementation("org.mockito:mockito-inline:5.2.0")
 
-    androidTestImplementation("androidx.test:runner:1.4.0")
-    androidTestImplementation("androidx.test:rules:1.4.0")
-    androidTestImplementation("androidx.test.ext:junit:1.1.3")
-    androidTestImplementation("org.mockito:mockito-android:2.28.2")
-    androidTestImplementation("androidx.test.espresso:espresso-core:3.4.0")
+    androidTestImplementation("androidx.test:runner:1.5.2")
+    androidTestImplementation("androidx.test:rules:1.5.0")
+    androidTestImplementation("androidx.test.ext:junit:1.1.5")
+    androidTestImplementation("org.mockito:mockito-android:5.2.0")
+    androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 
-    api("androidx.exifinterface:exifinterface:1.3.3")
-    api("androidx.lifecycle:lifecycle-common:2.3.1")
-    api("com.google.android.gms:play-services-tasks:17.2.1")
-    implementation("androidx.annotation:annotation:1.2.0")
+    api("androidx.exifinterface:exifinterface:1.3.6")
+    api("androidx.lifecycle:lifecycle-common:2.6.0")
+    api("com.google.android.gms:play-services-tasks:18.0.2")
+    implementation("androidx.annotation:annotation:1.6.0")
     implementation("com.otaliastudios.opengl:egloo:0.6.1")
 }
 
