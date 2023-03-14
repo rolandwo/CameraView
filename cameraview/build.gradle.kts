@@ -10,7 +10,7 @@ plugins {
 }
 
 android {
-    compileSdk = 33 as Int
+    compileSdk = property("compileSdkVersion") as Int
     defaultConfig {
         minSdk = property("minSdkVersion") as Int
         targetSdk = property("targetSdkVersion") as Int
